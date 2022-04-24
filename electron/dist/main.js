@@ -3,6 +3,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var electron_1 = require("electron");
 var path = require("path");
 var url = require("url");
+// import * as electron from 'electron';
+var electron = require('electron');
+// Enable live reload for all the files inside your project directory
+require('electron-reload')(__dirname);
 var win;
 electron_1.app.on('ready', createWindow);
 electron_1.app.on('activate', function () {

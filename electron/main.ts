@@ -1,7 +1,11 @@
 import { app, BrowserWindow } from 'electron'
 import * as path from 'path'
 import * as url from 'url'
+// import * as electron from 'electron';
+const electron = require('electron')
 
+// Enable live reload for all the files inside your project directory
+require('electron-reload')(__dirname);
 let win: BrowserWindow | null
 
 app.on('ready', createWindow)

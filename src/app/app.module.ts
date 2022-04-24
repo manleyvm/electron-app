@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
+import { FormsModule } from '@angular/forms';
+import { MonacoEditorModule } from 'ngx-monaco-editor';
 @NgModule({
   declarations: [
     AppComponent
@@ -14,6 +16,8 @@ import { MatSliderModule } from '@angular/material/slider';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSliderModule,
+    FormsModule,
+    MonacoEditorModule.forRoot() // use forRoot() in main app module only.
   ],
   providers: [],
   bootstrap: [AppComponent]
